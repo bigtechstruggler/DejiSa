@@ -1,10 +1,16 @@
 # DejiSa 🎵
 
-**A privacy-focused Android music player. Your music, your sources, your sound.**
+**A privacy-focused Android music player. Your music. Your sources. Your sound.**
 
-DejiSa brings local music, self-hosted libraries, network storage and internet radio together in one unified music experience.
+DejiSa is a feature-rich Android music player that brings your music together in one unified library.
 
-Built with Kotlin and Jetpack Compose, DejiSa combines its custom Crystal Glass interface with advanced audio processing, offline playback and extensive personalization.
+Enjoy Jellyfin integration, local music, SMB, FTP and SFTP network sources, personalized internet radio, UPnP/DLNA playback, offline downloads, playlists, lyrics, customizable home-screen widgets and Sonic Core DSP.
+
+Connect to Vigilsoni for music recognition, recognition history, artist following, release alerts and concert notifications through ntfy and UnifiedPush.
+
+DejiSa also features customizable Crystal Glass themes, adaptive layouts, local and WebDAV backups, and extensive playback customization.
+
+**One music player. Multiple sources. Your choice.**
 
 ---
 
@@ -16,30 +22,87 @@ Built with Kotlin and Jetpack Compose, DejiSa combines its custom Crystal Glass 
 
 Download the APK from the release assets and install it on your Android device.
 
-**Requirements**
+### Requirements
 
-* Android 11 or newer
-* Compatible Android device
-* Network connectivity for online features
+- Android 11 or newer
+- Compatible Android device
+- Network connectivity for online features
 
-No Jellyfin server or online account is required to play your local music.
+**No Jellyfin server or online account is required to play your local music.**
 
 ---
 
 ## 🎵 One unified music library
 
-Bring your music together from multiple sources:
+Your music should not be limited to a single server, folder or ecosystem.
 
-* Local music folders
-* Jellyfin
-* SMB 2/3 network shares
-* FTP
-* SFTP
-* Internet radio
+DejiSa brings music from multiple sources together in one library:
 
-DejiSa maintains a unified library with albums, artists, tracks and playlists.
+- Local music folders
+- Jellyfin music servers
+- SMB 2/3 network shares
+- FTP servers
+- SFTP servers
 
-Browse your collection regardless of where your music is stored.
+Browse your music through unified artist, album, track and playlist views, regardless of where your collection is stored.
+
+Additional library features include:
+
+- Source-specific music indexing
+- Cached music catalogues
+- Artist and album browsing
+- Track metadata and artwork
+- Unified playback queues
+- Locally managed playlists
+
+Your music collection remains organized even when different sources are involved.
+
+---
+
+## 🌐 Network music
+
+DejiSa supports several ways to access music stored on your home network, NAS or remote server.
+
+### SMB 2/3
+
+Connect to compatible SMB network shares and browse music stored on your NAS, computer or home server.
+
+### FTP
+
+Connect to FTP servers and access your remote music collection.
+
+**Security note:** Standard FTP does not encrypt its network traffic. Use it only on networks you trust.
+
+### SFTP
+
+Connect to compatible SFTP servers for music access over an encrypted SSH connection.
+
+### Jellyfin
+
+Connect to your own Jellyfin server to synchronize and stream your music library.
+
+Local and network-based sources are brought together inside DejiSa instead of requiring a separate music player for each source.
+
+---
+
+## 📺 UPnP/DLNA playback
+
+Enjoy your music beyond your phone.
+
+DejiSa supports UPnP/DLNA output for compatible playback devices on your local network.
+
+Features include:
+
+- Discovery of compatible network playback devices
+- Selection of available UPnP/DLNA renderers
+- Playback through compatible network audio equipment
+- Local-network permission handling on supported Android versions
+
+Use your phone to choose the music and a compatible network device to play it.
+
+UPnP/DLNA is an **audio-output feature**, not an additional music-library source.
+
+Availability depends on your network configuration and the capabilities of your receiving device.
 
 ---
 
@@ -47,28 +110,31 @@ Browse your collection regardless of where your music is stored.
 
 DejiSa features a custom-designed interface with three visual themes.
 
-**Moonstone Crystal Glass**
+### 🌕 Moonstone Crystal Glass
 
 A light daytime appearance.
 
-**Amethyst Crystal Glass**
+### 💜 Amethyst Crystal Glass
 
 An atmospheric evening appearance.
 
-**Obsidian Crystal Glass**
+### 🌑 Obsidian Crystal Glass
 
 A deep-night appearance with true AMOLED black.
 
 Themes can switch automatically based on the local time or be selected manually.
 
-Additional interface features include:
+### Additional interface features
 
-* Custom 3D glyph controls
-* Adaptive Crystal Dock
-* Sensor-driven specular lighting
-* Wallpaper and slideshow backgrounds
-* Customizable dock positioning
-* Adaptive layouts for phones, foldables and tablets
+- Custom 3D glyph controls
+- Adaptive Crystal Dock
+- Sensor-driven specular lighting
+- Wallpaper and slideshow backgrounds
+- Customizable dock positioning
+- Adaptive layouts for phones, foldables and tablets
+- Support for different screen sizes and orientations
+
+The interface adapts to your device while retaining DejiSa's distinctive Crystal Glass design.
 
 ---
 
@@ -78,13 +144,17 @@ DejiSa includes its own Sonic Core audio-processing system.
 
 Audio features include:
 
-* Digital signal processing
-* Audio output profiles
-* Calibration tools
-* Direct DAC audio functionality
-* Configurable playback cache
+- Digital signal processing
+- Audio output profiles
+- Equalizer functionality
+- Audio calibration tools
+- Device sound optimization
+- Direct DAC audio functionality
+- Configurable playback cache
 
-Audio behavior and supported output modes depend on your Android device and connected hardware.
+Customize your listening experience for your device and connected audio equipment.
+
+**Note:** Available audio-processing features, output modes and DAC functionality depend on your Android device, connected hardware and supported audio routes.
 
 ---
 
@@ -92,18 +162,20 @@ Audio behavior and supported output modes depend on your Android device and conn
 
 Connect DejiSa to your self-hosted Jellyfin server.
 
-Features include:
+Supported features include:
 
-* Music library synchronization
-* Artist, album and track browsing
-* Playlist access
-* Offline album downloads
-* Configurable synchronization
-* Quick Connect support
-* Background synchronization
-* Cache and library management
+- Music library synchronization
+- Artist, album and track browsing
+- Playlist access
+- Offline album downloads
+- Configurable synchronization
+- Quick Connect support
+- Background synchronization
+- Cache and library management
 
-Jellyfin remains optional. DejiSa can also operate using local music.
+Your Jellyfin collection becomes part of DejiSa's unified music library.
+
+**Jellyfin is optional.** DejiSa can also operate using local music and other configured sources.
 
 ---
 
@@ -111,17 +183,21 @@ Jellyfin remains optional. DejiSa can also operate using local music.
 
 Discover and organize radio stations from around the world.
 
-* Browse stations by continent and country
-* Customize available countries
-* Save favorite stations
-* Access favorites directly from Home
-* Dedicated radio playback interface
+Features include:
+
+- Browse stations by continent and country
+- Customize available countries
+- Save your favorite stations
+- Access favorites directly from Home
+- Dedicated radio playback interface
+
+Explore international radio without leaving your music player.
 
 ---
 
-## 📱 Widgets
+## 📱 Home-screen widgets
 
-DejiSa includes five resizable home-screen widgets:
+DejiSa includes five resizable Android home-screen widgets.
 
 1. Compact Player + Recognize
 2. Compact Player
@@ -129,56 +205,116 @@ DejiSa includes five resizable home-screen widgets:
 4. Seek Player
 5. Recognize-only
 
-Widgets support adaptive layouts and optional transparent backgrounds.
+Widgets support:
+
+- Adaptive layouts
+- Horizontal and vertical resizing
+- Optional transparent backgrounds
+- Playback controls where applicable
+- Music recognition shortcuts
+
+Control your music or start recognition directly from your Android home screen.
 
 ---
 
-## 🔎 Vigilsoni integration
+## 🔎 Music recognition with Vigilsoni
 
 DejiSa can connect to a compatible Vigilsoni service for additional music discovery functionality.
 
 Supported integration includes:
 
-* Music recognition
-* Recognition history
-* Short recognition previews
-* Artist following
-* Release notifications
-* Concert notifications
+- Music recognition
+- Recognition history
+- Short audio-sample recognition
+- Artist following
+- New release notifications
+- Concert notifications
 
 Connection is established through QR-code pairing.
 
-Vigilsoni requires a compatible service and configuration.
+When you start music recognition, DejiSa records a short audio sample and sends it to the configured Vigilsoni service through an authenticated ntfy relay.
+
+Vigilsoni processes the recognition request and sends the result back to DejiSa through UnifiedPush.
+
+Recognition history and artist-following features are also integrated into the application.
+
+**Vigilsoni requires a compatible service and configuration.**
+
+---
+
+## 🔔 Notifications with ntfy & UnifiedPush
+
+DejiSa integrates with **[ntfy](https://ntfy.sh/)** and **[UnifiedPush](https://unifiedpush.org/)** for notifications and communication with Vigilsoni.
+
+Supported functionality includes:
+
+- New music release notifications
+- Concert notifications
+- Music recognition results
+- Artist-following responses
+- Recognition-related events
+
+### How it works
+
+**Outgoing requests**
+
+DejiSa sends supported requests, including short music-recognition audio samples, to Vigilsoni through an authenticated ntfy relay.
+
+**Incoming notifications**
+
+Vigilsoni delivers supported events and recognition results back to DejiSa through UnifiedPush.
+
+**Your choice of distributor**
+
+Use ntfy as your UnifiedPush distributor or choose another compatible distributor.
+
+You can also use your own compatible ntfy server.
+
+This architecture avoids requiring Google Firebase Cloud Messaging for DejiSa's Vigilsoni notifications and gives users more control over notification delivery.
 
 ---
 
 ## 💾 Offline music and playlists
 
-Download supported albums for offline listening.
+Take your music with you.
 
-Create and manage DejiSa playlists containing tracks from different music sources.
+DejiSa supports offline listening through downloaded music and local files.
 
-Local playlists are independent of Jellyfin accounts.
+Features include:
+
+- Offline album downloads
+- Offline music browsing
+- Locally managed playlists
+- Playlists containing tracks from different music sources
+- Playback cache with configurable storage limits
+- Application-wide Offline Mode
+
+DejiSa playlists are independent of Jellyfin accounts.
 
 An application-wide Offline Mode keeps local and downloaded music available while pausing remote services.
 
+Your downloaded music remains accessible when your music server or internet connection is unavailable.
+
 ---
 
-## 🔐 Privacy and security
+## 🎶 Playback features
 
-DejiSa is designed with privacy in mind.
+DejiSa provides a full music playback experience through Android's Media3 playback framework.
 
-The application is developed without advertising SDKs, analytics SDKs or behavioral telemetry.
+Features include:
 
-Additional privacy features include:
+- Background audio playback
+- Playback queues
+- Shuffle and repeat
+- Interactive seeking
+- Lyrics
+- Album artwork
+- Playlist management
+- Audio-output selection
+- Configurable playback caching
+- Headset and media-control integration
 
-* Android Keystore-backed credential protection where applicable
-* Optional encrypted backups
-* Local-first playlist storage
-* Local profiles with optional biometric authentication
-* Configurable network sources
-
-Network access is used for features such as Jellyfin, internet radio, artwork, metadata retrieval, Vigilsoni and configured remote music services.
+Browse your collection, manage your queue and control playback from within DejiSa or supported Android media controls.
 
 ---
 
@@ -188,13 +324,49 @@ Back up your application settings and music configuration.
 
 Supported options include:
 
-* Local `.dejisa` backup files
-* WebDAV backup storage
-* Optional inclusion of credentials
-* Optional password-protected encryption
-* Playlist and settings restoration
+- Local `.dejisa` backup files
+- WebDAV backup storage
+- Optional inclusion of credentials
+- Optional password-protected encryption
+- Playlist restoration
+- Settings restoration
 
-Store your backups and recovery passwords securely.
+Choose local storage or a configured WebDAV destination.
+
+**Keep your backups and recovery passwords somewhere safe.**
+
+---
+
+## 🔐 Privacy and security
+
+DejiSa is designed with privacy in mind.
+
+The application is developed without:
+
+- Advertising SDKs
+- Analytics SDKs
+- Behavioral telemetry
+
+Additional privacy features include:
+
+- Android Keystore-backed credential protection where applicable
+- Optional encrypted backups
+- Local-first playlist storage
+- Local profiles with optional biometric authentication
+- Configurable music and network sources
+- Optional self-hosted services
+- UnifiedPush-based Vigilsoni notifications
+
+Network access is used only where required for configured functionality, such as:
+
+- Jellyfin
+- Internet radio
+- Remote music sources
+- Artwork and metadata retrieval
+- Vigilsoni
+- ntfy and UnifiedPush
+
+Local music playback does not require a Jellyfin account.
 
 ---
 
@@ -211,42 +383,25 @@ For updates, download the latest signed APK and install it over your existing in
 
 ---
 
-## 🔄 Updates
+## 🔄 Updates and releases
 
-All official APK releases are published through GitHub Releases.
+All official DejiSa APK releases are published through GitHub Releases.
 
-**[View all releases](https://github.com/bigtechstruggler/DejiSa-Downloads/releases)**
+**[⬇ Download the latest release](https://github.com/bigtechstruggler/DejiSa-Downloads/releases/latest)**
 
-This repository is used for application information and binary distribution.
+**[📦 View all releases](https://github.com/bigtechstruggler/DejiSa-Downloads/releases)**
 
-The full Android application source is maintained separately and is not included in the automatically generated source archives attached to these releases.
+This repository provides public application information and documentation.
 
----
+APK distribution takes place through the linked release repository.
 
-## About the name
+The full Android application source is maintained separately and is not included in the public distribution repository.
 
-DejiSa is derived from the Japanese expression for digital sound:
-
-デジタルサウンド — *Dejitaru Saundo*
-
-**Deji + Sa.**
+Automatically generated GitHub source archives contain the files present in the corresponding public release repository, not the separately maintained private application source.
 
 ---
 
-**DejiSa — Your music. Your sources. Your sound.**
-
-## Notifications & music recognition
-
-DejiSa integrates with **[ntfy](https://ntfy.sh/)** and **[UnifiedPush](https://unifiedpush.org/)** for notifications and communication with Vigilsoni.
-
-* Receive notifications about new music releases and concerts through UnifiedPush.
-* Start music recognition in DejiSa: a short audio sample is securely sent to Vigilsoni through an authenticated ntfy relay.
-* Receive recognition results back in DejiSa through UnifiedPush.
-* Use ntfy as your UnifiedPush distributor, with the option to choose your own compatible server.
-
-This approach keeps notification delivery in the user's hands rather than requiring Google Firebase Cloud Messaging.
-
-### A very special thank-you ❤️
+## ❤️ A very special thank-you
 
 A huge thank-you to **[Philipp C. Heckel](https://github.com/binwiederhier)**, the creator of ntfy, everyone who contributes to the project, and the people behind UnifiedPush.
 
@@ -256,3 +411,16 @@ You've made something genuinely useful, beautifully simple, and wonderfully inde
 
 Seriously, thank you for making this possible.
 
+---
+
+## 🇯🇵 About the name
+
+DejiSa is derived from the Japanese expression for digital sound:
+
+**デジタルサウンド — *Dejitaru Saundo***
+
+Deji + Sa.
+
+---
+
+# DejiSa — Your music. Your sources. Your sound. 🎵

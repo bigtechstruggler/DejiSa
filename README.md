@@ -118,7 +118,7 @@ A light daytime appearance.
 
 An atmospheric evening appearance.
 
-### 🌑 Obsidian Crystal Glass
+### 🌑 Melanite Crystal Glass
 
 A deep-night appearance with true AMOLED black.
 

@@ -234,3 +234,25 @@ DejiSa is derived from the Japanese expression for digital sound:
 ---
 
 **DejiSa — Your music. Your sources. Your sound.**
+
+## Notifications & music recognition
+
+DejiSa integrates with **[ntfy](https://ntfy.sh/)** and **[UnifiedPush](https://unifiedpush.org/)** for notifications and communication with Vigilsoni.
+
+* Receive notifications about new music releases and concerts through UnifiedPush.
+* Start music recognition in DejiSa: a short audio sample is securely sent to Vigilsoni through an authenticated ntfy relay.
+* Receive recognition results back in DejiSa through UnifiedPush.
+* Use ntfy as your UnifiedPush distributor, with the option to choose your own compatible server.
+
+This approach keeps notification delivery in the user's hands rather than requiring Google Firebase Cloud Messaging.
+
+### A very special thank-you ❤️
+
+A huge thank-you to **[Philipp C. Heckel](https://github.com/binwiederhier)**, the creator of ntfy, everyone who contributes to the project, and the people behind UnifiedPush.
+
+You've made something genuinely useful, beautifully simple, and wonderfully independent.
+
+**After the wheel and fire, ntfy might just be humanity's next great invention.** 🔥🛞🔔
+
+Seriously, thank you for making this possible.
+

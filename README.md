@@ -426,5 +426,13 @@ DejiSa is derived from the Japanese expression for digital sound:
 Deji + Sa.
 
 ---
+## ❤️ Support this project
 
+If you enjoy this project and want to support my work:
+
+[☕ Support me on Ko-fi](https://ko-fi.com/bigtechstruggler)
+
+Your support helps me keep building and maintaining my projects — and gets me one tiny step closer to that Jaguar XJ8 (X350). 🐆
+
+Support is completely optional. The software remains free.
 # DejiSa — Your music. Your sources. Your sound. 🎵

@@ -8,7 +8,7 @@
 
 DejiSa is a feature-rich Android music player that brings your music together in one unified library.
 
-Enjoy Jellyfin integration, local music, SMB, FTP and SFTP network sources, personalized internet radio, UPnP/DLNA playback, offline downloads, playlists, lyrics, customizable home-screen widgets and Sonic Core DSP.
+Enjoy Plex, Emby and Jellyfin integration, local music, SMB, FTP and SFTP network sources, personalized internet radio, UPnP/DLNA playback, offline downloads, playlists, lyrics, customizable home-screen widgets and Sonic Core DSP.
 
 Connect to Vigilsoni for music recognition, recognition history, artist following, release alerts and concert notifications through ntfy and UnifiedPush.
 
@@ -44,7 +44,7 @@ Download the APK from the release assets and install it on your Android device.
 - Compatible Android device
 - Network connectivity for online features
 
-**No Jellyfin server or online account is required to play your local music.**
+**No Plex, Emby, Jellyfin or other media server is required to play your local music.**
 
 ---
 
@@ -55,7 +55,9 @@ Your music should not be limited to a single server, folder or ecosystem.
 DejiSa brings music from multiple sources together in one library:
 
 - Local music folders
-- Jellyfin music servers
+- Plex Media Server
+- Emby Server
+- Jellyfin Server
 - SMB 2/3 network shares
 - FTP servers
 - SFTP servers
@@ -92,6 +94,14 @@ Connect to FTP servers and access your remote music collection.
 ### SFTP
 
 Connect to compatible SFTP servers for music access over an encrypted SSH connection.
+
+### Plex
+
+Connect to your Plex Media Server and access your music library directly from DejiSa.
+
+### Emby
+
+Connect to your Emby Server and access your music library directly from DejiSa.
 
 ### Jellyfin
 
@@ -174,11 +184,23 @@ Customize your listening experience for your device and connected audio equipmen
 
 ---
 
-## 📡 Jellyfin integration
+## 📡 Plex, Emby & Jellyfin integration
+
+DejiSa can connect to multiple media-server ecosystems while keeping playback and browsing inside one application.
+
+### Plex
+
+Connect DejiSa to your Plex Media Server and bring your Plex music collection into DejiSa alongside your other configured sources.
+
+### Emby
+
+Connect DejiSa to your Emby Server and bring your Emby music collection into DejiSa alongside your other configured sources.
+
+### Jellyfin
 
 Connect DejiSa to your self-hosted Jellyfin server.
 
-Supported features include:
+Supported Jellyfin features include:
 
 - Music library synchronization
 - Artist, album and track browsing
@@ -189,9 +211,9 @@ Supported features include:
 - Background synchronization
 - Cache and library management
 
-Your Jellyfin collection becomes part of DejiSa's unified music library.
+Your Plex, Emby and Jellyfin collections can become part of DejiSa's unified music experience.
 
-**Jellyfin is optional.** DejiSa can also operate using local music and other configured sources.
+**Media-server integration is optional.** DejiSa can also operate using local music and other configured sources.
 
 ---
 
@@ -305,7 +327,7 @@ Features include:
 - Playback cache with configurable storage limits
 - Application-wide Offline Mode
 
-DejiSa playlists are independent of Jellyfin accounts.
+DejiSa playlists are independent of Plex, Emby and Jellyfin accounts.
 
 An application-wide Offline Mode keeps local and downloaded music available while pausing remote services.
 
@@ -375,6 +397,8 @@ Additional privacy features include:
 
 Network access is used only where required for configured functionality, such as:
 
+- Plex
+- Emby
 - Jellyfin
 - Internet radio
 - Remote music sources
@@ -382,7 +406,7 @@ Network access is used only where required for configured functionality, such as
 - Vigilsoni
 - ntfy and UnifiedPush
 
-Local music playback does not require a Jellyfin account.
+Local music playback does not require Plex, Emby, Jellyfin or another media-server account.
 
 ---
 

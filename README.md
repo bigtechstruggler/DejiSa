@@ -428,15 +428,3 @@ Deji + Sa.
 ---
 
 # DejiSa — Your music. Your sources. Your sound. 🎵
-
-## 🐆 Support development
-
-Enjoying this project?
-
-I build and maintain my software independently, without developer telemetry or tracking.
-
-If you'd like to support my work — and contribute to the completely sensible long-term goal of owning a Jaguar XJ8 (X350):
-
-**[🐆 Support BigTechStruggler](https://www.gofundme.com/f/support-bigtechstruggler-fund-the-jaguar-xj8)**
-
-Support is completely optional. The software remains free.

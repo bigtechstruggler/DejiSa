@@ -16,6 +16,18 @@ DejiSa also features customizable Crystal Glass themes, adaptive layouts, local 
 
 **One music player. Multiple sources. Your choice.**
 
+## 📱 Screenshots
+
+<p align="center">
+  <img src="screenshots/dejisa-home.png" alt="DejiSa home screen" width="46%" />
+  <img src="screenshots/dejisa-now-playing-melanite.png" alt="DejiSa now playing screen" width="46%" />
+</p>
+
+<p align="center">
+  <img src="screenshots/dejisa-advanced-about.png" alt="DejiSa Advanced & About screen" width="68%" />
+</p>
+
+*Moonstone and Melanite Crystal Glass themes shown. Screenshots are from DejiSa 3.50.*
 ---
 
 ## 📥 Download

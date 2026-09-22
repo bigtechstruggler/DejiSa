@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="assets/dejisa-logo.png" width="210" />
+</div>
+
 # DejiSa 🎵
 
 **A privacy-focused Android music player. Your music. Your sources. Your sound.**

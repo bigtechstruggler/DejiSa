@@ -164,23 +164,63 @@ The interface adapts to your device while retaining DejiSa's distinctive Crystal
 
 ---
 
-## 🎧 Sonic Core audio engine
+## DejiSa Surreality audio engine
 
-DejiSa includes its own Sonic Core audio-processing system.
+DejiSa includes its own audio-processing engine: **DejiSa Surreality**.
+
+Surreality is built around a high-precision audio pipeline with **64-bit DSP calculations** and adaptive output handling for Android devices, headphones, speakers and external DACs.
 
 Audio features include:
 
-- Digital signal processing
-- Audio output profiles
-- Equalizer functionality
-- Audio calibration tools
-- Device sound optimization
+- 64-bit digital signal processing
+- Adaptive Hi-Res PCM output
+- 32-bit float output on supported Android audio routes
+- Automatic safe output fallback when a requested format is unavailable
+- Surreality DSP and Surreality Pure playback modes
+- 10-band graphic equalizer
+- Parametric EQ
+- Automatic DSP headroom management
+- ReplayGain support
+- Adaptive normalization
+- Peak protection and limiting
+- Spatial audio processing
+- Personal audio calibration
+- Per-device audio profiles
+- Device-specific sound optimization
+- Multichannel downmix support
 - Direct DAC audio functionality
+- USB audio device detection and diagnostics
 - Configurable playback cache
+- Live audio route and format inspection
 
-Customize your listening experience for your device and connected audio equipment.
+### Surreality DSP
 
-**Note:** Available audio-processing features, output modes and DAC functionality depend on your Android device, connected hardware and supported audio routes.
+**Surreality DSP** processes decoded PCM audio using 64-bit calculations before sending it to the Android audio output.
+
+Depending on the active audio route, Surreality can automatically select an appropriate output format. For example, a 16-bit / 44.1 kHz FLAC source can remain at its native sample rate while the DSP pipeline outputs 32-bit float PCM when supported.
+
+The additional output precision does not recreate information that is absent from the original recording. Instead, it provides additional numerical headroom for DSP processing, mixing, equalization and volume calculations before final playback.
+
+### Surreality Pure
+
+**Surreality Pure** bypasses the Surreality DSP processing stages for users who want an unprocessed playback path.
+
+Android, Media3, Bluetooth hardware or connected DACs may still perform their own conversion, mixing or resampling, so Pure mode by itself does not imply bit-perfect playback.
+
+### Adaptive output
+
+Surreality can inspect and adapt to the available Android audio route instead of blindly forcing an unsupported format.
+
+Supported routes may use formats such as:
+
+- 16-bit PCM
+- 24-bit PCM
+- 32-bit PCM
+- 32-bit float PCM
+
+When a selected format is unavailable, Surreality safely falls back to a compatible output instead of breaking playback.
+
+**Note:** Available audio-processing features, output precision, Direct DAC functionality and supported audio routes depend on the Android device, operating system, connected hardware and audio driver capabilities.
 
 ---
 

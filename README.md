@@ -32,7 +32,7 @@ DejiSa also features customizable Crystal Glass themes, adaptive layouts, local 
 
 ## 📥 Download
 
-### Latest release: DejiSa 3.50
+### Latest release: DejiSa 4.00
 
 **[⬇ Download the latest APK](https://github.com/bigtechstruggler/DejiSa-Downloads/releases/latest)**
 

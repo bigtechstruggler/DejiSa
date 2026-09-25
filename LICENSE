@@ -1,0 +1,44 @@
+DejiSa Source-Available Proprietary License
+Copyright (c) 2026 bigtechstruggler. All rights reserved.
+
+This source code is made publicly available for viewing, personal evaluation,
+security review, and private testing only.
+
+Except where explicitly permitted in writing by the copyright holder, you may
+not:
+
+1. copy, redistribute, republish, mirror, sublicense, sell, rent, or otherwise
+   distribute this source code or substantial portions of it;
+2. publish, distribute, or make available modified or derivative versions of
+   DejiSa;
+3. rebrand, rename, or present DejiSa or a modified version of DejiSa as your
+   own product, project, or work;
+4. distribute compiled binaries, APKs, installers, packages, or other builds
+   created from this source code;
+5. use this source code, in whole or in substantial part, in another public or
+   commercial product or service;
+6. remove, alter, or obscure copyright, authorship, attribution, trademark,
+   license, or other proprietary notices.
+
+You may make local copies and modifications solely for private, non-distributed
+testing and evaluation.
+
+No patent, trademark, branding, or other intellectual-property rights are
+granted by this license.
+
+The name "DejiSa", its branding, artwork, and associated identity may not be
+used to promote or distribute another product without prior written permission.
+
+GitHub functionality such as viewing or forking a public repository does not
+grant permission to redistribute, publish, relicense, rebrand, or distribute
+derivative builds beyond the rights explicitly granted above.
+
+THE SOFTWARE AND SOURCE CODE ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO
+EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM,
+OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+For permissions beyond this license, contact the repository owner.

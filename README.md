@@ -2,21 +2,23 @@
   <img src="assets/dejisa-logo.png" width="210" />
 </div>
 
-# DejiSa 🎵
+# DejiSa ðŸŽµ
 
 **A privacy-focused Android music player. Your music. Your sources. Your sound.**
 
-DejiSa is a feature-rich Android music player that brings your music together in one unified library.
+DejiSa is a feature-rich Android music player that brings local music, media servers and network sources together in one unified library.
 
-Enjoy Plex, Emby and Jellyfin integration, local music, SMB, FTP and SFTP network sources, personalized internet radio, UPnP/DLNA playback, offline downloads, playlists, lyrics, customizable home-screen widgets and Sonic Core DSP.
+Play music from local folders, Plex, Emby, Jellyfin, Navidrome/OpenSubsonic, SMB, FTP and SFTP. Use internet radio, UPnP/DLNA output, offline downloads, intelligent caching, playlists, lyrics, music videos, Android home-screen widgets and the **DejiSa Surreality** audio engine from one application.
 
-Connect to Vigilsoni for music recognition, recognition history, artist following, release alerts and concert notifications through ntfy and UnifiedPush.
+Connect DejiSa to Vigilsoni for music recognition, recognition history, artist following, release alerts and concert notifications through ntfy and UnifiedPush.
 
-DejiSa also features customizable Crystal Glass themes, adaptive layouts, local and WebDAV backups, and extensive playback customization.
+DejiSa also includes its own Crystal Glass interface, adaptive layouts for phones, foldables and tablets, sensor-driven motion, local and WebDAV backups, Playback Intelligence and extensive audio customization.
 
 **One music player. Multiple sources. Your choice.**
 
-## 📱 Screenshots
+---
+
+## ðŸ“± Screenshots
 
 <p align="center">
   <img src="screenshots/dejisa-home.png" alt="DejiSa home screen" width="46%" />
@@ -27,14 +29,15 @@ DejiSa also features customizable Crystal Glass themes, adaptive layouts, local 
   <img src="screenshots/dejisa-advanced-about.png" alt="DejiSa Advanced & About screen" width="68%" />
 </p>
 
-*Moonstone and Melanite Crystal Glass themes shown. Screenshots are from DejiSa 3.50.*
+*Moonstone and Melanite Crystal Glass themes shown. Screenshots may show an earlier DejiSa build; the current interface can differ.*
+
 ---
 
-## 📥 Download
+## ðŸ“¥ Download
 
-### Latest release: DejiSa 4.00
+### Latest release: DejiSa 5.3.7
 
-**[⬇ Download the latest APK](https://github.com/bigtechstruggler/DejiSa-Downloads/releases/latest)**
+**[â¬‡ Download the latest APK](https://github.com/bigtechstruggler/DejiSa-Downloads/releases/latest)**
 
 Download the APK from the release assets and install it on your Android device.
 
@@ -44,11 +47,11 @@ Download the APK from the release assets and install it on your Android device.
 - Compatible Android device
 - Network connectivity for online features
 
-**No Plex, Emby, Jellyfin or other media server is required to play your local music.**
+**No Plex, Emby, Jellyfin, Navidrome/OpenSubsonic or other media server is required to play your local music.**
 
 ---
 
-## 🎵 One unified music library
+## ðŸŽµ One unified music library
 
 Your music should not be limited to a single server, folder or ecosystem.
 
@@ -58,6 +61,8 @@ DejiSa brings music from multiple sources together in one library:
 - Plex Media Server
 - Emby Server
 - Jellyfin Server
+- Navidrome
+- OpenSubsonic / Subsonic servers
 - SMB 2/3 network shares
 - FTP servers
 - SFTP servers
@@ -68,16 +73,42 @@ Additional library features include:
 
 - Source-specific music indexing
 - Cached music catalogues
-- Artist and album browsing
+- Unified artist, album and track views
 - Track metadata and artwork
 - Unified playback queues
 - Locally managed playlists
+- Source-aware playback
+- Multi-source availability information
+- MusicBrainz-aware identity matching where metadata is available
 
 Your music collection remains organized even when different sources are involved.
 
 ---
 
-## 🌐 Network music
+## ðŸ§  Library Intelligence
+
+DejiSa can combine matching music from different sources without destroying the original source information.
+
+Library Intelligence includes:
+
+- Non-destructive deduplication
+- Artist, album and track matching
+- MusicBrainz-aware identity matching where available
+- Conservative normalized matching where identifiers are missing
+- Preservation of separate source variants
+- Automatic best-source selection
+- Same-track source fallback
+- Persistent source aliases
+- Playlist continuity when source identities change
+- Favorites, history, lyrics and offline data linked to logical library items
+- Improved distinction between track artist and album artist
+- Conservative metadata merging for artwork, genres, year and titles
+
+DejiSa keeps the logical library clean while preserving the individual source copies behind it.
+
+---
+
+## ðŸŒ Network music & media servers
 
 DejiSa supports several ways to access music stored on your home network, NAS or remote server.
 
@@ -97,21 +128,51 @@ Connect to compatible SFTP servers for music access over an encrypted SSH connec
 
 ### Plex
 
-Connect to your Plex Media Server and access your music library directly from DejiSa.
+Connect to your Plex Media Server and bring your Plex music collection into DejiSa.
 
 ### Emby
 
-Connect to your Emby Server and access your music library directly from DejiSa.
+Connect to your Emby Server and bring your Emby music collection into DejiSa.
 
 ### Jellyfin
 
 Connect to your own Jellyfin server to synchronize and stream your music library.
 
-Local and network-based sources are brought together inside DejiSa instead of requiring a separate music player for each source.
+Supported Jellyfin features include:
+
+- Music library synchronization
+- Artist, album and track browsing
+- Playlist access
+- Offline downloads
+- Configurable synchronization
+- Quick Connect support
+- Background synchronization
+- Cache and library management
+
+### Navidrome / OpenSubsonic
+
+Connect to compatible Navidrome, OpenSubsonic and Subsonic-style servers.
+
+Supported integration includes:
+
+- Multiple servers and accounts
+- Artists
+- Albums
+- Tracks
+- Playlists
+- Artwork
+- Search
+- Streaming
+- Playlist membership
+- Integration with DejiSa's normal library and playback queue
+
+Local and network-based sources are brought together inside DejiSa instead of requiring a different player for each source.
+
+**Media-server integration is optional.** DejiSa can operate using local music and other configured sources only.
 
 ---
 
-## 📺 UPnP/DLNA playback
+## ðŸ“º UPnP/DLNA playback
 
 Enjoy your music beyond your phone.
 
@@ -132,39 +193,58 @@ Availability depends on your network configuration and the capabilities of your 
 
 ---
 
-## ✨ Crystal Glass interface
+## âœ¨ Crystal Glass interface
 
-DejiSa features a custom-designed interface with three visual themes.
+DejiSa uses a custom-designed Crystal Glass interface with three visual themes.
 
-### 🌕 Moonstone Crystal Glass
+### ðŸŒ• Moonstone Crystal Glass
 
 A light daytime appearance.
 
-### 💜 Amethyst Crystal Glass
+### ðŸ’œ Amethyst Crystal Glass
 
 An atmospheric evening appearance.
 
-### 🌑 Melanite Crystal Glass
+### ðŸŒ‘ Melanite Crystal Glass
 
 A deep-night appearance with true AMOLED black.
 
 Themes can switch automatically based on the local time or be selected manually.
 
-### Additional interface features
+### Crystal motion & interaction
+
+The current Crystal interface includes:
 
 - Custom 3D glyph controls
 - Adaptive Crystal Dock
-- Sensor-driven specular lighting
-- Wallpaper and slideshow backgrounds
-- Customizable dock positioning
-- Adaptive layouts for phones, foldables and tablets
-- Support for different screen sizes and orientations
+- Sensor-driven parallax
+- Specular lighting and micro-reflections
+- Floating Crystal panes with depth and tilt
+- Soft clipping for scrolling Crystal surfaces
+- Adaptive dock positioning
+- Configurable dock tower animations
+- Multiple tower styles
+- Slow / Normal / Fast animation speeds
+- Reduce Motion support
+- Foldable-aware motion behavior
+- Individual dock and tower-glyph parallax
 
-The interface adapts to your device while retaining DejiSa's distinctive Crystal Glass design.
+### Adaptive layouts
+
+DejiSa adapts to:
+
+- Phones
+- Foldables
+- Tablets
+- Portrait
+- Landscape
+- Compact and tall layouts
+
+The interface adapts to the device while retaining DejiSa's Crystal Glass design language.
 
 ---
 
-## DejiSa Surreality audio engine
+## ðŸŽ›ï¸ DejiSa Surreality audio engine
 
 DejiSa includes its own audio-processing engine: **DejiSa Surreality**.
 
@@ -224,40 +304,95 @@ When a selected format is unavailable, Surreality safely falls back to a compati
 
 ---
 
-## 📡 Plex, Emby & Jellyfin integration
+## ðŸŽšï¸ Hi-Res, USB & DSD
 
-DejiSa can connect to multiple media-server ecosystems while keeping playback and browsing inside one application.
+DejiSa includes additional handling for compatible Hi-Res, USB and DSD playback paths.
 
-### Plex
+Supported functionality includes:
 
-Connect DejiSa to your Plex Media Server and bring your Plex music collection into DejiSa alongside your other configured sources.
+- DSF support
+- DFF support
+- DSD64 detection
+- DSD128 detection
+- DSD256 detection
+- Native DSD where the Android audio path and connected hardware confirm support
+- DoP 1.1
+- DSD-to-PCM fallback when native DSD or DoP is unavailable
+- Requested, negotiated and actual output diagnostics
+- Hardware timestamp information
+- Hardware-clock and drift diagnostics
+- Buffer and underrun diagnostics
 
-### Emby
-
-Connect DejiSa to your Emby Server and bring your Emby music collection into DejiSa alongside your other configured sources.
-
-### Jellyfin
-
-Connect DejiSa to your self-hosted Jellyfin server.
-
-Supported Jellyfin features include:
-
-- Music library synchronization
-- Artist, album and track browsing
-- Playlist access
-- Offline album downloads
-- Configurable synchronization
-- Quick Connect support
-- Background synchronization
-- Cache and library management
-
-Your Plex, Emby and Jellyfin collections can become part of DejiSa's unified music experience.
-
-**Media-server integration is optional.** DejiSa can also operate using local music and other configured sources.
+DejiSa does **not** claim to provide its own low-level USB audio driver. Actual playback capabilities depend on Android, the active audio route and the connected DAC.
 
 ---
 
-## 📻 Internet radio
+## ðŸŽ¶ Playback Intelligence
+
+DejiSa extends normal Android Media3 playback with additional transition, recovery and resume logic.
+
+Playback Intelligence includes:
+
+- Smart transition mode
+- Gapless transition mode
+- Fade transition mode
+- Album-aware transition handling
+- Disc and track-number awareness
+- Shuffle-aware next-track selection
+- Configurable next-track prewarming for remote sources
+- Persistent long-track resume
+- Automatic cleanup of near-end resume positions
+- Sleep timer
+- End-of-current-track sleep mode
+- Source fallback before unavailable tracks are skipped
+- Persistent playback and queue restoration
+- Playback Intelligence diagnostics in Advanced & About
+
+### Sleep timer
+
+Available timer options include:
+
+- 15 minutes
+- 30 minutes
+- 45 minutes
+- 60 minutes
+- End of current track
+
+The queue is preserved when the timer pauses playback.
+
+### Transition note
+
+Fade mode uses fade-out / fade-in behavior. DejiSa does not claim a fake overlapping dual-player crossfade when two tracks are not actually being mixed simultaneously.
+
+---
+
+## ðŸŽ¬ Music Videos
+
+DejiSa includes a dedicated Music Videos experience without turning the app into a general movie or TV client.
+
+Features include:
+
+- Dedicated Music Videos library section
+- Responsive 16:9 artwork grid
+- Local music-video discovery in configured music folders
+- Jellyfin Music Videos
+- Plex Music Videos
+- Emby Music Videos
+- Dedicated Music Video Now Playing screen
+- Portrait and landscape layouts
+- Shared Surreality playback controls
+- Interactive seeking
+- Previous / Next where applicable
+- Audio-to-video switching while preserving playback position
+- Video-to-audio switching while preserving playback position
+- Music Video mini-player
+- Offline-only handling for remote videos
+
+Generic movie and TV libraries are intentionally outside DejiSa's focus.
+
+---
+
+## ðŸ“» Internet radio
 
 Discover and organize radio stations from around the world.
 
@@ -265,15 +400,17 @@ Features include:
 
 - Browse stations by continent and country
 - Customize available countries
-- Save your favorite stations
+- Save favorite stations
 - Access favorites directly from Home
-- Dedicated radio playback interface
+- Dedicated Radio Now Playing interface
+- Crystal playback controls
+- Vigilsoni recognition access from Radio Now Playing
 
 Explore international radio without leaving your music player.
 
 ---
 
-## 📱 Home-screen widgets
+## ðŸ“± Home-screen widgets
 
 DejiSa includes five resizable Android home-screen widgets.
 
@@ -290,14 +427,16 @@ Widgets support:
 - Optional transparent backgrounds
 - Playback controls where applicable
 - Music recognition shortcuts
+- Localized widget labels
+- Crystal-style touch feedback
 
 Control your music or start recognition directly from your Android home screen.
 
 ---
 
-## 🔎 Music recognition with Vigilsoni
+## ðŸ”Ž Vigilsoni Companion
 
-DejiSa can connect to a compatible Vigilsoni service for additional music discovery functionality.
+DejiSa can connect to a compatible Vigilsoni service for music discovery and notification features.
 
 Supported integration includes:
 
@@ -307,6 +446,11 @@ Supported integration includes:
 - Artist following
 - New release notifications
 - Concert notifications
+- Upcoming-concert previews
+- Dedicated upcoming-concert screen
+- Artist-library export
+- Pairing status
+- UnifiedPush status
 
 Connection is established through QR-code pairing.
 
@@ -314,13 +458,26 @@ When you start music recognition, DejiSa records a short audio sample and sends 
 
 Vigilsoni processes the recognition request and sends the result back to DejiSa through UnifiedPush.
 
-Recognition history and artist-following features are also integrated into the application.
+### Recognition feedback
+
+While Vigilsoni is actively recording, Music Now Playing and Radio Now Playing can show DejiSa's **Signature Crystal ring** around the recognition microphone. The active treatment disappears when the recording phase ends.
+
+### Artist export
+
+DejiSa can export its deduplicated logical artist library to a compatible Vigilsoni service.
+
+Export data can include:
+
+- Artist name
+- MusicBrainz Artist ID where available
+- Favorite status
+- Contributing source labels
 
 **Vigilsoni requires a compatible service and configuration.**
 
 ---
 
-## 🔔 Notifications with ntfy & UnifiedPush
+## ðŸ”” Notifications with ntfy & UnifiedPush
 
 DejiSa integrates with **[ntfy](https://ntfy.sh/)** and **[UnifiedPush](https://unifiedpush.org/)** for notifications and communication with Vigilsoni.
 
@@ -331,6 +488,7 @@ Supported functionality includes:
 - Music recognition results
 - Artist-following responses
 - Recognition-related events
+- Companion data-change events
 
 ### How it works
 
@@ -352,51 +510,138 @@ This architecture avoids requiring Google Firebase Cloud Messaging for DejiSa's 
 
 ---
 
-## 💾 Offline music and playlists
+## ðŸ’¾ Offline music & intelligent cache
 
 Take your music with you.
 
-DejiSa supports offline listening through downloaded music and local files.
+DejiSa uses a source-neutral offline and cache system rather than limiting offline playback to one server type.
 
-Features include:
+Pinned offline downloads can work with supported sources such as:
 
-- Offline album downloads
-- Offline music browsing
-- Locally managed playlists
-- Playlists containing tracks from different music sources
-- Playback cache with configurable storage limits
+- Jellyfin
+- Plex
+- Emby
+- Navidrome
+- OpenSubsonic
+- SMB
+- SFTP
+- FTP
+
+Offline and cache features include:
+
+- Resumable `.part` downloads
+- Retry and backoff
+- Persistent pending-download queue
+- Clean source replacement when a partial download can no longer continue safely
+- Wi-Fi / Ethernet-only option
+- Original/direct quality preference where available
+- Offline albums
+- Offline playlists
+- Separate pinned downloads and automatic cache
+- Automatic LRU cache
+- Protection of pinned music during cache cleanup
+- Network-to-offline playback fallback where possible
+- Offline artwork
+- Offline metadata
+- Offline lyrics
+- Per-source storage accounting
 - Application-wide Offline Mode
 
-DejiSa playlists are independent of Plex, Emby and Jellyfin accounts.
-
-An application-wide Offline Mode keeps local and downloaded music available while pausing remote services.
-
-Your downloaded music remains accessible when your music server or internet connection is unavailable.
+DejiSa playlists can contain tracks from different music sources and are not tied to a single Plex, Emby or Jellyfin account.
 
 ---
 
-## 🎶 Playback features
+## â–¶ï¸ Now Playing
 
-DejiSa provides a full music playback experience through Android's Media3 playback framework.
+DejiSa's Now Playing experience is shared across music, radio and music videos where the controls are appropriate.
 
 Features include:
 
-- Background audio playback
-- Playback queues
-- Shuffle and repeat
+- Signature Crystal play/pause control
+- Circular volume control
+- Live RMS/equalizer visualization
 - Interactive seeking
-- Lyrics
-- Album artwork
-- Playlist management
-- Audio-output selection
-- Configurable playback caching
-- Headset and media-control integration
+- Live scrub updates
+- Improved touch targets
+- Shuffle and repeat controls
+- Repeat One
+- Lyrics access
+- Offline controls
+- Favorite controls
+- Persistent active Crystal feedback
+- Momentary touch feedback
+- Adaptive layouts
+- Foldable support
+- Crystal motion
+- Pull-down gesture to minimize or dismiss Now Playing
+- Configurable dismiss animations
+- Reduce Motion support
 
-Browse your collection, manage your queue and control playback from within DejiSa or supported Android media controls.
+Radio keeps radio-specific behavior, such as avoiding meaningless seek controls for true live streams.
 
 ---
 
-## 🔄 Backup and restore
+## ðŸŒ Onboarding & language packs
+
+DejiSa includes a Crystal-styled setup experience designed for new installations and reconfiguration.
+
+The onboarding flow supports configured sources such as:
+
+- Local music
+- Jellyfin
+- Plex
+- Emby
+- Navidrome / OpenSubsonic
+- Network sources
+
+Features include:
+
+- Multi-step setup flow
+- Crystal-themed transitions
+- Animated control demonstrations
+- Responsive layouts
+- Reduce Motion support
+- JSON language-pack import
+- Local language-pack storage
+- English fallback
+- Placeholder validation
+- Plural validation
+- Translation coverage checks
+- RTL-aware Compose layout support
+
+Language packs can extend the interface without replacing the built-in English fallback.
+
+---
+
+## âš¡ Reliability & performance
+
+DejiSa 5.x includes extensive runtime and reliability work in addition to visible features.
+
+Examples include:
+
+- MediaController reconnect and rebuild logic
+- Bounded reconnect backoff
+- Better recovery after service interruption and fold/unfold
+- Playback source fallback inside the playback service
+- Improved queue and playback-state restore
+- Reduced duplicate playback-state publication
+- Reduced unnecessary Compose redraws
+- Reduced unnecessary notification refreshes
+- More efficient Jellyfin sync updates
+- Demand-driven playback-position polling
+- More efficient audio-meter data handling
+- Reduced redundant high-refresh-rate visualizer work
+- Bounded artwork loading and decoding
+- Reduced artwork-memory cache pressure
+- Temporary-file streaming for large remote artwork paths
+- Smaller widget artwork decode targets
+- Improved protection against artwork-related memory pressure
+
+The goal is not only to add features, but to keep DejiSa responsive during large-library browsing, artwork loading, playback and background operation.
+
+---
+
+## ðŸ”„ Backup and restore
 
 Back up your application settings and music configuration.
 
@@ -415,7 +660,7 @@ Choose local storage or a configured WebDAV destination.
 
 ---
 
-## 🔐 Privacy and security
+## ðŸ” Privacy and security
 
 DejiSa is designed with privacy in mind.
 
@@ -440,17 +685,18 @@ Network access is used only where required for configured functionality, such as
 - Plex
 - Emby
 - Jellyfin
+- Navidrome / OpenSubsonic
 - Internet radio
 - Remote music sources
 - Artwork and metadata retrieval
 - Vigilsoni
 - ntfy and UnifiedPush
 
-Local music playback does not require Plex, Emby, Jellyfin or another media-server account.
+Local music playback does not require a media-server account.
 
 ---
 
-## 📦 Installation
+## ðŸ“¦ Installation
 
 1. Open the latest release.
 2. Expand **Assets**.
@@ -463,13 +709,13 @@ For updates, download the latest signed APK and install it over your existing in
 
 ---
 
-## 🔄 Updates and releases
+## ðŸ”„ Updates and releases
 
 All official DejiSa APK releases are published through GitHub Releases.
 
-**[⬇ Download the latest release](https://github.com/bigtechstruggler/DejiSa-Downloads/releases/latest)**
+**[â¬‡ Download the latest release](https://github.com/bigtechstruggler/DejiSa-Downloads/releases/latest)**
 
-**[📦 View all releases](https://github.com/bigtechstruggler/DejiSa-Downloads/releases)**
+**[ðŸ“¦ View all releases](https://github.com/bigtechstruggler/DejiSa-Downloads/releases)**
 
 This repository provides public application information and documentation.
 
@@ -481,34 +727,38 @@ Automatically generated GitHub source archives contain the files present in the 
 
 ---
 
-## ❤️ A very special thank-you
+## â¤ï¸ A very special thank-you
 
 A huge thank-you to **[Philipp C. Heckel](https://github.com/binwiederhier)**, the creator of ntfy, everyone who contributes to the project, and the people behind UnifiedPush.
 
 You've made something genuinely useful, beautifully simple, and wonderfully independent.
 
-**After the wheel and fire, ntfy might just be humanity's next great invention.** 🔥🛞🔔
+**After the wheel and fire, ntfy might just be humanity's next great invention.** ðŸ”¥ðŸ›žðŸ””
 
 Seriously, thank you for making this possible.
 
 ---
 
-## 🇯🇵 About the name
+## ðŸ‡¯ðŸ‡µ About the name
 
 DejiSa is derived from the Japanese expression for digital sound:
 
-**デジタルサウンド — *Dejitaru Saundo***
+**ãƒ‡ã‚¸ã‚¿ãƒ«ã‚µã‚¦ãƒ³ãƒ‰ â€” *Dejitaru Saundo***
 
 Deji + Sa.
 
 ---
-## ❤️ Support this project
+
+## â¤ï¸ Support this project
 
 If you enjoy this project and want to support my work:
 
-[☕ Support me on Ko-fi](https://ko-fi.com/bigtechstruggler)
+[â˜• Support me on Ko-fi](https://ko-fi.com/bigtechstruggler)
 
-Your support helps me keep building and maintaining my projects — and gets me one tiny step closer to that Jaguar XJ8 (X350). 🐆
+Your support helps me keep building and maintaining my projects â€” and gets me one tiny step closer to that Jaguar XJ8 (X350). ðŸ†
 
 Support is completely optional. The software remains free.
-# DejiSa — Your music. Your sources. Your sound. 🎵
+
+---
+
+# DejiSa â€” Your music. Your sources. Your sound. ðŸŽµ
